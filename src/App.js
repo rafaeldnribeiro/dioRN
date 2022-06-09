@@ -22,6 +22,8 @@ const appColor = {
   darkAppBlueColor: "#0d1117",
   greyAppColor: "#484f58",
   whiteAppColor: "#c9d1d9",
+  darkGreenColor: "#006d32",
+  lighGreenColor: "#39d353",
 };
 
 const imageProfileGithub =
@@ -64,6 +66,156 @@ const App = () => {
         >
           Estudante Web/Mobile Developer
         </Text>
+        <View style={style.flexrow_container}>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+        </View>
+
+        <View style={style.flexrow_container}>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+        </View>
+
+        <View style={style.flexrow_container}>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+        </View>
+
+        <View style={style.flexrow_container}>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+        </View>
+
+        <View style={style.flexrow_container}>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View
+            style={style.square}
+            backgroundColor={appColor.lighGreenColor}
+          ></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+        </View>
+
+        <View style={style.flexrow_container}>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+          <View style={style.square}></View>
+        </View>
+
         <Pressable onPress={handlePressGoToGithub}>
           <View style={style.button}>
             <Text style={[style.textButton]}>Open in Github</Text>
@@ -101,16 +253,18 @@ const style = StyleSheet.create({
     fontWeight: "bold",
   },
   userName: {
-    marginTop: 0,
+    marginTop: -3,
     fontSize: 15,
     color: appColor.greyAppColor,
     fontWeight: "normal",
   },
   description: {
-    marginTop: 0,
+    marginTop: -10,
     fontSize: 15,
+    justifyContent: "center",
     color: appColor.whiteAppColor,
     fontWeight: "normal",
+    padding: 20,
   },
   button: {
     marginTop: 20,
@@ -122,6 +276,18 @@ const style = StyleSheet.create({
     fontSize: 16,
     color: appColor.whiteAppColor,
     fontWeight: "bold",
+  },
+  flexrow_container: {
+    flexDirection: "row",
+    backgroundColor: appColor.darkAppBlueColor,
+    justifyContent: "center",
+  },
+  square: {
+    backgroundColor: appColor.darkGreenColor,
+    height: 15,
+    width: 15,
+    margin: 2,
+    borderRadius: 3,
   },
 });
 
